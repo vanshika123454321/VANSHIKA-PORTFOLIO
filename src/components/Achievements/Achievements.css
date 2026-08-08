@@ -1,0 +1,315 @@
+/* =========================
+      ACHIEVEMENTS SECTION
+========================= */
+
+.achievements {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #0d0d0d;
+
+  color: #fff;
+
+  padding: 100px 8%;
+}
+
+/* =========================
+        SECTION TITLE
+========================= */
+
+.achievements .section-title {
+  text-align: center;
+
+  max-width: 750px;
+
+  margin: 0 auto 70px;
+}
+
+.achievements .section-title h2 {
+  font-size: 48px;
+
+  font-weight: 700;
+
+  margin: 0;
+}
+
+.achievements .underline {
+  width: 80px;
+
+  height: 4px;
+
+  background: #ff004f;
+
+  margin: 15px auto;
+
+  border-radius: 20px;
+}
+
+.achievements .section-title p {
+  margin-top: 20px;
+
+  color: #aaa;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+/* =========================
+      ACHIEVEMENT GRID
+========================= */
+
+.achievements-container {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+}
+
+/* =========================
+      ACHIEVEMENT CARD
+========================= */
+
+.achievement-card {
+  position: relative;
+
+  padding: 35px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px;
+
+  transition: 0.4s ease;
+
+  overflow: hidden;
+}
+
+.achievement-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: #ff004f;
+
+  transform: scaleX(0);
+
+  transform-origin: left;
+
+  transition: 0.4s ease;
+}
+
+.achievement-card:hover::before {
+  transform: scaleX(1);
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(255, 0, 79, 0.6);
+
+  box-shadow: 0 18px 40px rgba(255, 0, 79, 0.18);
+}
+
+/* =========================
+      ACHIEVEMENT ICON
+========================= */
+
+.achievement-icon {
+  width: 58px;
+
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 15px;
+
+  background: rgba(255, 0, 79, 0.12);
+
+  border: 1px solid rgba(255, 0, 79, 0.3);
+
+  color: #ff4d88;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  transition: 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+  background: #ff004f;
+
+  color: #fff;
+
+  transform: scale(1.08);
+
+  box-shadow: 0 0 20px rgba(255, 0, 79, 0.35);
+}
+
+/* =========================
+      CARD TITLE
+========================= */
+
+.achievement-card h3 {
+  font-size: 24px;
+
+  color: #fff;
+
+  margin: 0 0 22px;
+}
+
+/* =========================
+      ACHIEVEMENT LIST
+========================= */
+
+.achievement-card ul {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 13px;
+}
+
+.achievement-card li {
+  position: relative;
+
+  padding-left: 22px;
+
+  color: #bdbdbd;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+/* Check mark */
+
+.achievement-card li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 0;
+
+  top: 1px;
+
+  color: #ff004f;
+
+  font-weight: 700;
+
+  font-size: 15px;
+}
+
+/* =========================
+      TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .achievements {
+    padding: 90px 6%;
+  }
+
+  .achievements-container {
+    grid-template-columns: 1fr;
+
+    max-width: 700px;
+  }
+}
+
+/* =========================
+      MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .achievements {
+    padding: 80px 5%;
+  }
+
+  .achievements .section-title {
+    margin-bottom: 50px;
+  }
+
+  .achievements .section-title h2 {
+    font-size: 38px;
+  }
+
+  .achievement-card {
+    padding: 28px;
+  }
+
+  .achievement-card h3 {
+    font-size: 22px;
+  }
+
+  .achievement-card li {
+    font-size: 14px;
+  }
+}
+
+/* =========================
+      SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .achievements {
+    padding: 70px 4%;
+  }
+
+  .achievements .section-title h2 {
+    font-size: 31px;
+  }
+
+  .achievements .section-title p {
+    font-size: 14px;
+  }
+
+  .achievement-card {
+    padding: 22px;
+
+    border-radius: 16px;
+  }
+
+  .achievement-icon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 9px;
+  }
+
+  .achievement-card h3 {
+    font-size: 20px;
+
+    margin-bottom: 18px;
+  }
+
+  .achievement-card li {
+    font-size: 13px;
+  }
+}

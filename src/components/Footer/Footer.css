@@ -1,0 +1,32 @@
+footer {
+  width: 100%;
+  padding: 20px 0;
+
+  background: #080808;
+  color: #fff;
+
+  text-align: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  font-size: 14px;
+}
+
+footer strong {
+  color: #ff004f;
+}
+
+footer span {
+  color: #aaa;
+}
+
+footer strong {
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 18px 10px;
+    font-size: 12px;
+  }
+}
