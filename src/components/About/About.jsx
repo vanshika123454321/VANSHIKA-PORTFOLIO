@@ -38,7 +38,7 @@ function About() {
             Hello, I'm <span>Vanshika Sinha</span>
           </h3>
 
-          <h4>Second Year B.Tech Student | Computer Science & Engineering</h4>
+          <h4>Third Year B.Tech Student | Computer Science & Engineering</h4>
 
           <p>
             I am currently pursuing my B.Tech in Computer Science & Engineering

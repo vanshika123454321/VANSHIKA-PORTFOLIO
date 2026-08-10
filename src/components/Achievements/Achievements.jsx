@@ -8,7 +8,7 @@ const achievements = [
       "NPTEL — The Joy of Computing using Python",
       "NPTEL — Cloud Computing",
       "NPTEL — Privacy and Security in Online Social Media",
-      "Udemy — Machine Learning Course",
+      "Udemy — Machine Learning",
       "IBM SkillsBuild — Getting Started with Artificial Intelligence",
     ],
   },
